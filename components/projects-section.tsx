@@ -75,6 +75,20 @@ const projects: Project[] = [
     demo: "#",
     image: "/projects/noticiasdechivilcoy.png",
   },
+  {
+    slug: "stock-app",
+    title: "Stock App",
+    problem:
+      "Pequeños y medianos comercios necesitaban una solución centralizada para controlar stock, ventas, compras y métricas clave del negocio, evitando errores manuales, falta de visibilidad en tiempo real y desorganización de la información.",
+    solution:
+      "Aplicación web full stack para la gestión integral de stock, productos, clientes, proveedores, ventas y compras. Incluye dashboard con métricas en tiempo real, control de stock mínimo, reportes, historial de movimientos y autenticación segura por usuario.",
+    stack: ["Next.js", "TailwindCSS", "Node.js", "PostgreSQL"],
+    architecture:
+      "Arquitectura cliente-servidor basada en API REST. Frontend desarrollado con Next.js y componentes reutilizables. Backend en Node.js con rutas desacopladas, lógica de negocio separada y persistencia en PostgreSQL. Uso de autenticación JWT, middlewares de seguridad y transacciones para operaciones críticas como ventas y compras.",
+    github: "https://github.com/alexissalo/app-stock",
+    demo: "https://stockappmanagement.netlify.app/",
+    image: "/projects/stockapp.png",
+  },
 ];
 
 const allTechs = Array.from(new Set(projects.flatMap((p) => p.stack))).sort();
